@@ -11,9 +11,8 @@ Dependencies:
 Download the code:
 ==================
 
--   git clone https://github.com/euasier/ngbp-first-app&lt;/&gt;
+-   git clone https://github.com/euasier/ngbp-first-app
 -   cd ngbp-first-app
--   git checkout step-0
 
 Install local dependencies:
 ===========================
