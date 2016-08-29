@@ -1,0 +1,26 @@
+
+<h2>List of patients</h2>
+<div  style="width:1100px; height: 300px;overflow: scroll">
+    <table>
+        <thead style="text-align: center">
+            <tr>
+                <th style="width: 158px">First name</th>
+                <th style="width: 158px">Last name</th>
+                <th style="width: 158px">Gender</th>
+                <th style="width: 158px">Company</th>
+                <th style="width: 158px">Job</th>
+                <th style="text-align: center; width: 158px%">Treatments</th>
+                <th style="width: 158px"></th>
+                </tr>
+        </thead>
+        <tr ng-repeat="patient in patients">
+            <td>{{patient.firstname}}</td>
+            <td>{{patient.lastName}}</td>
+            <td>{{patient.gender}}</td>
+            <td>{{patient.company}}</td>
+            <td>{{patient.job}}</td>
+            <td style="text-align: center">{{patient.treatment.length}}</td>
+            <td><a ng-href="#/editPatient?id={{patient.id}}">Edit</a>&nbsp<a href="#" ng-click="deletePatient($index)">Delete</a></td>
+        </tr>
+    </table>
+</div>

@@ -11,7 +11,7 @@ Dependencies:
 Download the code:
 ==================
 
--   git clone https://github.com/euasier/ngbp-first-app
+-   git clone https://github.com/euasier/ngbp-first-app&lt;/&gt;
 -   cd ngbp-first-app
 -   git checkout step-0
 
@@ -21,9 +21,21 @@ Install local dependencies:
 -   npm install
 -   bower install
 
-Build app and start web server:
-===============================
+Step 0: Hello Angular
+=====================
+
+Download the code: git checkout -f step-0
+
+Build and run web app:
 
 -   grunt build
 -   npm start
 
+Visit the main page: http://localhost:8000
+
+Step 1: List patients
+=====================
+
+Download the code: git checkout -f step-1
+
+Build and run the web app, visit the main page

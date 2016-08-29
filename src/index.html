@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
+<html ng-app="ngbpFirstApp" ng-controller="AppCtrl">
   <head>
     <title ng-bind="pageTitle"></title>
 
@@ -32,7 +32,7 @@
       { "parsetags": "explicit" }
     </script>
   </head>
-  <body ng-app="first-app" ng-init="frontEnd = 'Angular'">
-	<h1>Hello {{frontEnd}} !</h1>
+  <body>
+  <div class="container" ui-view="main"></div>
   </body>
 </html>
