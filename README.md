@@ -3,8 +3,8 @@ Dependencies:
 
 -   Install Nodejs runtime (https://github.com/nodejs/node)
 -   grunt-cli karma and bower, required by ngbp (Angular kickstarter
-    included in current project http://ngbp.github.io/ngbp/\#/home):
-    sudo npm -g install grunt-cli karma bower
+    included in current project http://ngbp.github.io/ngbp): sudo npm -g
+    install grunt-cli karma bower
 -   grunt (http://gruntjs.com), required by grunt-cli: sudo npm install
     grunt -g (local install raises grunt issues).
 
