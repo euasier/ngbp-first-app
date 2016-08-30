@@ -1,50 +1,50 @@
-<h3>Patient</h3>
+<h3><u>Patient</u></h3>
 <table>
     <tr>
-        <td>First name:</td><td><input type="text" ng-model="patient.firstname"></td>
+        <td><label>First name</label></td><td><input type="text" class="form-control" class="form-control" ng-model="patient.firstname"></td>
     </tr>
     <tr>
-        <td>Last name:</td><td><input type="text" ng-model="patient.lastName"></td>
+        <td><label>Last name</label></td><td><input type="text" class="form-control" ng-model="patient.lastName"></td>
     </tr>
     <tr>
-        <td>Gender:</td><td><input type="text" ng-model="patient.gender"></td>
+        <td><label>Gender</label></td><td><input type="text" class="form-control" ng-model="patient.gender"></td>
     </tr>
     <tr>
-        <td>Company:</td><td><input type="text" ng-model="patient.company"></td>
+        <td><label>Company</label></td><td><input type="text" class="form-control" ng-model="patient.company"></td>
     </tr>
     <tr>
-        <td>Job:</td><td><input type="text" ng-model="patient.job"></td>
+        <td><label>Job</label></td><td><input type="text" class="form-control" ng-model="patient.job"></td>
     </tr>
     <tr>
-        <td>Salary:</td><td><input type="text" ng-model="patient.salary"></td>
+        <td><label>Salary</label></td><td><input type="text" class="form-control" ng-model="patient.salary"></td>
     </tr>
 </table>
 
-<h3>Skills:</h3>
+<h3><u>Skills</u></h3>
 <div ng-repeat="skill in patient.skills">
     <br>   
     <table>
         <tr>
-            <td>LinkedIn Skill:</td><td><input type="text" ng-model="skill.linkedInSkill"></td>
+            <td><label>LinkedIn Skill</label></td><td><input type="text" class="form-control" ng-model="skill.linkedInSkill"></td>
         </tr>
     </table>
 </div>
 
-<h3>Treatments:</h3>
+<h3><u>Treatments</u></h3>
 <div ng-repeat="treatm in patient.treatment">
     <br>   
     <table>
         <tr>
-            <td>Generic drug:</td><td><input type="text" ng-model="treatm.drugNameGeneric"></td>
+            <td><label>Generic drug</label></td><td><input type="text" class="form-control" ng-model="treatm.drugNameGeneric"></td>
         </tr>
         <tr>
-            <td>Brand drug:</td><td><input type="text" ng-model="treatm.drugNameBrand"></td>
+            <td><label>Brand drug</label></td><td><input type="text" class="form-control" ng-model="treatm.drugNameBrand"></td>
         </tr>
         <tr>
-            <td>Diagnoses Desc.:</td><td><input type="text" ng-readonly="true" ng-model="treatm.diagnosesDesc" size="60"></td>
+            <td><label>Diagnoses Desc.</label></td><td><input type="text" ng-readonly="true" class="form-control" ng-model="treatm.diagnosesDesc" size="60"></td>
         </tr>
         <tr>
-            <td>Procedure Desc.:</td><td><input type="text" ng-readonly="true" ng-model="treatm.procedureDesc" size="60"></td>
+            <td><label>Procedure Desc.</label></td><td><input type="text" ng-readonly="true" class="form-control" ng-model="treatm.procedureDesc" size="60"></td>
         </tr>
     </table>
 </div>
