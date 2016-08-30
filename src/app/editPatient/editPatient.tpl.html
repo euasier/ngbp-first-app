@@ -1,1 +1,53 @@
-Patiend id: {{patient.id}} name: {{patient.firstname}}
+<h3>Patient</h3>
+<table>
+    <tr>
+        <td>First name:</td><td><input type="text" ng-model="patient.firstname"></td>
+    </tr>
+    <tr>
+        <td>Last name:</td><td><input type="text" ng-model="patient.lastName"></td>
+    </tr>
+    <tr>
+        <td>Gender:</td><td><input type="text" ng-model="patient.gender"></td>
+    </tr>
+    <tr>
+        <td>Company:</td><td><input type="text" ng-model="patient.company"></td>
+    </tr>
+    <tr>
+        <td>Job:</td><td><input type="text" ng-model="patient.job"></td>
+    </tr>
+    <tr>
+        <td>Salary:</td><td><input type="text" ng-model="patient.salary"></td>
+    </tr>
+</table>
+
+<h3>Skills:</h3>
+<div ng-repeat="skill in patient.skills">
+    <br>   
+    <table>
+        <tr>
+            <td>LinkedIn Skill:</td><td><input type="text" ng-model="skill.linkedInSkill"></td>
+        </tr>
+    </table>
+</div>
+
+<h3>Treatments:</h3>
+<div ng-repeat="treatm in patient.treatment">
+    <br>   
+    <table>
+        <tr>
+            <td>Generic drug:</td><td><input type="text" ng-model="treatm.drugNameGeneric"></td>
+        </tr>
+        <tr>
+            <td>Brand drug:</td><td><input type="text" ng-model="treatm.drugNameBrand"></td>
+        </tr>
+        <tr>
+            <td>Diagnoses Desc.:</td><td><input type="text" readonly ng-model="treatm.diagnosesDesc" size="60"></td>
+        </tr>
+        <tr>
+            <td>Procedure Desc.:</td><td><input type="text" readonly ng-model="treatm.procedureDesc" size="60"></td>
+        </tr>
+    </table>
+</div>
+<a href="#" style="float:left;" ng-click="cancelPatientSave()">Cancel</a>
+<a href="#" style="float:right;" ng-click="savePatient(patient.id)">Save</a>
+<br><br><br><br>

@@ -18,7 +18,20 @@ angular.module( 'ngbpFirstApp.editPatient', [
 })
 
 .controller( 'EditPatientCtrl', function EditPatientCtrl( $scope, $stateParams, patientsService ) {
-    $scope.patient = patientsService.getById($stateParams.id);
+    var originalPatient = patientsService.getById($stateParams.id);
+    $scope.patient = originalPatient;
+    $scope.originalPatient = angular.copy(originalPatient);
+
+    $scope.cancelPatientSave = function () {
+        // Undo every change made through the UI
+        angular.copy($scope.originalPatient, $scope.patient);
+    };
+
+    $scope.savePatient = function (id) {
+        // Keep client UI model (and server DB in synch)
+        patientsService.updateById(id);
+    };
+
 })
 
 ;

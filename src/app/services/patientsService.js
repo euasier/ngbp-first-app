@@ -1,6 +1,8 @@
 angular.module( 'ngbpFirstApp')
 
 .factory("patientsService", function() {
+  // The model is automatically update by Angular via two way-binding in the client side
+  // but the server side DB needs to be updated manually/programatically
   var patients = [
 	{
 		"id": 1,
@@ -714,6 +716,17 @@ angular.module( 'ngbpFirstApp')
         }
       }
       return patient;
+    },
+    updateById: function(id) {
+      var patient;
+
+      for (index=0;index<patients.length;index++) {
+        patient = patients[index];
+        if(patient.id == id) {
+          break;
+        }
+      }
+      // execute HTTP request
     },
     removeById: function(id) {
       var patient;
