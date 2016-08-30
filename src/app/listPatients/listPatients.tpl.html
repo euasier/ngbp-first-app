@@ -20,7 +20,7 @@
             <td>{{patient.company}}</td>
             <td>{{patient.job}}</td>
             <td style="text-align: center">{{patient.treatment.length}}</td>
-            <td><a ng-href="#/editPatient?id={{patient.id}}">Edit</a>&nbsp<a href="#" ng-click="deletePatient($index)">Delete</a></td>
+            <td><a ng-href="#/editPatient?id={{patient.id}}">Edit</a>&nbsp<a href="#" ng-click="deletePatient(patient.id)">Delete</a></td>
         </tr>
     </table>
 </div>

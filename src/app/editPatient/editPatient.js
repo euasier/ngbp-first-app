@@ -17,8 +17,8 @@ angular.module( 'ngbpFirstApp.editPatient', [
   });
 })
 
-.controller( 'EditPatientCtrl', function EditPatientCtrl( $scope, $stateParams ) {
-    $scope.id = $stateParams.id;
+.controller( 'EditPatientCtrl', function EditPatientCtrl( $scope, $stateParams, patientsService ) {
+    $scope.patient = patientsService.getById($stateParams.id);
 })
 
 ;
