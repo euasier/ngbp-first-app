@@ -29,26 +29,26 @@ Build and run web app:
 
 -   grunt build
 -   npm start
-
-Visit the main page: http://localhost:8000
+-   Visit the main page: http://localhost:8000
 
 Step 1: List patients
 =====================
 
-Download the code: git checkout -f step-1
-
-Build and run the web app, visit the main page
+-   Download the code: git checkout -f step-1
+-   Build and run the web app, visit the main page
 
 Step 2: Edit patient
 ====================
 
-Download the code: git checkout -f step-2
-
-Build and run the web app, visit the main page
+-   Download the code: git checkout -f step-2
+-   Build and run the web app, visit the main page
 
 Step 3: Add new patient
 =======================
 
-Download the code: git checkout -f step-3
+-   Download the code: git checkout -f step-3
+-   Build and run the web app, visit the main page
 
-Build and run the web app, visit the main page
+At the moment, this is a CRUD angular sample app and the data is managed
+locally.\
+Data generated with: https://www.mockaroo.com/
