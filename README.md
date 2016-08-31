@@ -45,3 +45,10 @@ Step 2: Edit patient
 Download the code: git checkout -f step-2
 
 Build and run the web app, visit the main page
+
+Step 3: Add new patient
+=======================
+
+Download the code: git checkout -f step-3
+
+Build and run the web app, visit the main page
