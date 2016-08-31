@@ -47,6 +47,16 @@ angular.module( 'ngbpFirstApp.addeditPatient', [
         $scope.patient.skills.push({"linkedInSkill": "" + $scope.newSkill});
     };
 
+    $scope.deleteSkill = function (skill) {
+      alert(skill);
+      for(index=0;index<$scope.patient.skills.length;index++) {
+        if(skill == $scope.patient.skills[index].linkedInSkill) {
+          $scope.patient.skills.splice(index,1);
+          break;
+        }  
+      }
+    };
+
     $scope.addTreatment = function () {
       var newProcCode = "";
       var newProcDesc = "";
