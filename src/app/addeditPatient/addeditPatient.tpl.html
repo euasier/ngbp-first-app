@@ -1,0 +1,82 @@
+<h3><u>Patient</u></h3>
+<table>
+    <tr>
+        <td><label>First name</label></td><td><input type="text" class="form-control" class="form-control" ng-model="patient.firstname"></td>
+    </tr>
+    <tr>
+        <td><label>Last name</label></td><td><input type="text" class="form-control" ng-model="patient.lastName"></td>
+    </tr>
+    <tr>
+        <td><label>Gender</label></td><td><input type="text" class="form-control" ng-model="patient.gender"></td>
+    </tr>
+    <tr>
+        <td><label>Company</label></td><td><input type="text" class="form-control" ng-model="patient.company"></td>
+    </tr>
+    <tr>
+        <td><label>Job</label></td><td><input type="text" class="form-control" ng-model="patient.job"></td>
+    </tr>
+    <tr>
+        <td><label>Salary</label></td><td><input type="text" class="form-control" ng-model="patient.salary"></td>
+    </tr>
+</table>
+
+<h3><u>Skills</u></h3>
+<label>LinkedIn Skill</label>
+<input type="text" class="form-control" ng-model="newSkill"/>
+<a href="javascript:;" style="float: right" ng-click="addSkill();">Add Skill</a></td>
+<div ng-repeat="skill in patient.skills">
+    <br>   
+    <table>
+        <tr>
+            <td><label>LinkedIn Skill</label></td>
+            <td><input type="text" class="form-control" ng-model="skill.linkedInSkill"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div style="float: right;">Delete (not implemented)</div></td>
+        </tr>
+    </table>
+</div>
+
+<h3><u>Treatments</u></h3>
+<label>Drug generic</label>
+<input type="text" class="form-control" ng-model="newdrugNameGeneric"/>
+<label>Drug brand</label>
+<input type="text" class="form-control" ng-model="newdrugNameBrand"/>
+<label>Diagnoses Desc.</label><br>
+<select ng-model="newDiagnosesCode">
+    <option value="">---Please select---</option>
+    <option ng-repeat="diagnose in diagnoses" ng-value="diagnose.diagnosesCode">{{diagnose.diagnosesDesc}}</option>
+</select>
+<br>
+<label>Procedure Desc.</label><br>
+<select ng-model="newProcedureCode">
+    <option value="">---Please select---</option>
+    <option ng-repeat="procedure in procedures" ng-value="procedure.procedureCode">{{procedure.procedureDesc}}</option>
+</select>
+<br>
+<br>
+<a href="javascript:;" style="float: right" ng-click="addTreatment();">Add Treatment</a></td><br>
+<div ng-repeat="treatm in patient.treatment">
+    <br>   
+    <table>
+        <tr>
+            <td><label>Generic drug</label></td><td><input type="text" class="form-control" ng-model="treatm.drugNameGeneric"></td>
+        </tr>
+        <tr>
+            <td><label>Brand drug</label></td><td><input type="text" class="form-control" ng-model="treatm.drugNameBrand"></td>
+        </tr>
+        <tr>
+            <td><label>Diagnoses Desc.</label></td><td><input type="text" ng-readonly="true" class="form-control" ng-model="treatm.diagnosesDesc" size="60"></td>
+        </tr>
+        <tr>
+            <td><label>Procedure Desc.</label></td><td><input type="text" ng-readonly="true" class="form-control" ng-model="treatm.procedureDesc" size="60"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div style="float: right;">Delete (not implemented)</div></td>
+        </tr>
+    </table>
+</div>
+<br><br>
+<a href="#" style="float:left;" ng-click="cancelPatientSave()">Cancel</a>
+<a href="#" style="float:right;" ng-click="savePatient(patient.id)">Save</a>
+<br><br><br><br>

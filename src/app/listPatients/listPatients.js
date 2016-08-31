@@ -22,7 +22,7 @@ angular.module( 'ngbpFirstApp.listPatients', [
   $scope.patients = patientsService.getAll();
 
   $scope.deletePatient = function (id) {
-      patientsService.removeById(id);
+    patientsService.removeById(id);
   };
 
 });

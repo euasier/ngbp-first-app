@@ -1,9 +1,8 @@
 angular.module( 'ngbpFirstApp', [
   'templates-app',
   'templates-common',
-  'smart-table',
   'ngbpFirstApp.listPatients',
-  'ngbpFirstApp.editPatient',
+  'ngbpFirstApp.addeditPatient',
   'ui.router'
 ])
 
