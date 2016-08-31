@@ -701,7 +701,7 @@ angular.module( 'ngbpFirstApp')
 			}
 		]
 	}];
-
+ 
   return {
     getAll: function() {
       return patients;
@@ -728,9 +728,27 @@ angular.module( 'ngbpFirstApp')
       }
       // execute HTTP request
     },
+	generateId: function() {
+		// sequential id generation (should be done by the DB)
+		var patientId;
+		var maxId = -1;
+
+		for (index=0;index<patients.length;index++) {
+			patientId = patients[index].id;
+			if(patientId > maxId) {
+			maxId = patientId;
+			}
+		}
+
+		return ++maxId;
+	},
+    insert: function(patient) {
+		patient.id = this.generateId(); 
+		patients.push(patient);
+    },
     removeById: function(id) {
       var patient;
-      
+
       for (index=0;index<patients.length;index++) {
         patient = patients[index];
         if(patient.id == id) {

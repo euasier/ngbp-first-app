@@ -1,35 +1,38 @@
 
 <h2>List of patients</h2>
-<div  style="width:1120px; height: 300px;">
-    <table st-table="patients" class="table table-striped">
-        <thead style="text-align: center">
-            <tr>
-                <th st-sort="firstname" style="width: 158px">First name</th>
-                <th st-sort="lastName" style="width: 158px">Last name</th>
-                <th st-sort="gender" style="width: 158px">Gender</th>
-                <th st-sort="company" style="width: 158px">Company</th>
-                <th st-sort="job" style="width: 178px">Job</th>
-                <th style="text-align: center; width: 158px%">Treatments</th>
-                <th style="width: 158px"></th>
-                </tr>
-        </thead>
-        <tbody>
-        <tr ng-repeat="patient in patients">
-            <td>{{patient.firstname}}</td>
-            <td>{{patient.lastName}}</td>
-            <td>{{patient.gender}}</td>
-            <td>{{patient.company}}</td>
-            <td>{{patient.job}}</td>
-            <td style="text-align: center">{{patient.treatment.length}}</td>
-            <td><a ng-href="#/editPatient?id={{patient.id}}">Edit</a>&nbsp<a href="#" ng-click="deletePatient(patient.id)">Delete</a></td>
-        </tr>
-		<tfoot>
-			<tr>
-				<td colspan="7" class="text-center">
-					<div st-pagination="" st-items-by-page="5" st-displayed-pages="7"></div>
-				</td>
-			</tr>
-		</tfoot>
-        </tbody>
-    </table>
-</div>
+<table>
+    <tr>
+        <td>
+            <div  style="width:1120px; height: 300px; overflow: scroll;">
+                <table class="table table-striped">
+                    <thead style="text-align: center">
+                        <tr>
+                            <th st-sort="firstname" style="width: 158px">First name</th>
+                            <th st-sort="lastName" style="width: 158px">Last name</th>
+                            <th st-sort="gender" style="width: 158px">Gender</th>
+                            <th st-sort="company" style="width: 158px">Company</th>
+                            <th st-sort="job" style="width: 178px">Job</th>
+                            <th style="text-align: center; width: 158px%">Treatments</th>
+                            <th style="width: 158px"></th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="patient in patients">
+                        <td>{{patient.firstname}}</td>
+                        <td>{{patient.lastName}}</td>
+                        <td>{{patient.gender}}</td>
+                        <td>{{patient.company}}</td>
+                        <td>{{patient.job}}</td>
+                        <td style="text-align: center">{{patient.treatment.length}}</td>
+                        <td><a ng-href="#/addeditPatient?id={{patient.id}}">Edit</a>&nbsp<a href="#" ng-click="deletePatient(patient.id)">Delete</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </td>
+    <tr>
+        <td>
+            <a href="#/addeditPatient" style="float:right;">Add</a><!--editPatient with no id parameter implies a new patient -->
+        </td>
+    </tr>
+</table>
