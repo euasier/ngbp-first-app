@@ -26,8 +26,10 @@ angular.module( 'ngbpFirstApp.addeditPatient', [
     $scope.newdrugNameGeneric = "";
     $scope.newProcedureCode = "";
     $scope.newDiagnosesCode = "";
-    $scope.diagnoses = diagnosesService.getAll();
-    $scope.procedures = proceduresService.getAll();
+//    $scope.diagnoses = diagnosesService.getAll();
+//    $scope.procedures = proceduresService.getAll();
+    diagnosesService.getAll().then(function(data) {$scope.diagnoses =  data;},function (error) {alert("Error downloading diagnoses");});
+    proceduresService.getAll().then(function(data) {$scope.procedures =  data;},function (error) {alert("Error downloading procedures");});
     var originalPatient;
     var newPatient = ($stateParams.id === undefined);
 
@@ -91,10 +93,9 @@ angular.module( 'ngbpFirstApp.addeditPatient', [
                                       );
     };
 
-    $scope.savePatient = function (id) {
+    $scope.savePatient = function () {
       if(!newPatient) {
-          // Keep client UI model (and server DB in synch)
-          patientsService.updateById(id);
+          patientsService.update($scope.patient);
       } else {
          patientsService.insert($scope.patient);
       }

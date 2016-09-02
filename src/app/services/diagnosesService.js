@@ -1,12 +1,19 @@
 angular.module( 'ngbpFirstApp')
 
-.factory("diagnosesService", function() {
-    var diagnoses = [{"diagnosesCode": "73027","diagnosesDesc": "Unspecified osteomyelitis, ankle and foot"},
-                        {"diagnosesCode": "V4365","diagnosesDesc": "Knee joint replacement"}];
+.factory("diagnosesService", function($q, $http) {
  
   return {
     getAll: function() {
-      return diagnoses;
+      var deferred = $q.defer();
+
+      $http.get('getAllDiagnoses').success(function( data ) {
+            deferred.resolve(data);
+        } )
+        .error(function (error) {
+          deferred.reject(error);
+         });
+      // return a promise to update the UI
+      return deferred.promise;
     }
   };
 });

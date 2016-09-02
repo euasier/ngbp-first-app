@@ -1,11 +1,19 @@
 angular.module( 'ngbpFirstApp')
 
-.factory("proceduresService", function() {
-       var procedures = [{"procedureCode": "8771", "procedureDesc": "Computerized axial tomography of kidney"}, 
-                        {"procedureCode": "3855", "procedureDesc": "Ligation and stripping of varicose veins, other thoracic vessels"}];
+.factory("proceduresService", function($q, $http) {
+
   return {
     getAll: function() {
-      return procedures;
+      var deferred = $q.defer();
+
+      $http.get('getAllProcedures').success(function( data ) {
+            deferred.resolve(data);
+        } )
+        .error(function (error) {
+          deferred.reject(error);
+         });
+      // return a promise to update the UI
+      return deferred.promise;
     }
   };
 });

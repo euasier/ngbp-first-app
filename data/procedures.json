@@ -1,0 +1,146 @@
+[
+{
+  "procedureDesc": "Ventricular shunt to abdominal cavity and organs",
+  "procedureCode": "0234"
+},
+{
+  "procedureDesc": "Ultraviolet light therapy",
+  "procedureCode": "9982"
+},
+{
+  "procedureDesc": "Removal of other therapeutic device",
+  "procedureCode": "9789"
+},
+{
+  "procedureDesc": "Operations on two or more extraocular muscles involving temporary detachment from globe, one or both eyes",
+  "procedureCode": "153"
+},
+{
+  "procedureDesc": "Closed [percutaneous] [needle] biopsy of kidney",
+  "procedureCode": "5523"
+},
+{
+  "procedureDesc": "Computerized axial tomography of kidney",
+  "procedureCode": "8771"
+},
+{
+  "procedureDesc": "Ligation and stripping of varicose veins, other thoracic vessels",
+  "procedureCode": "3855"
+},
+{
+  "procedureDesc": "Local perfusion of small intestine",
+  "procedureCode": "4695"
+},
+{
+  "procedureDesc": "Infundibulectomy",
+  "procedureCode": "3534"
+},
+{
+  "procedureDesc": "Injection or infusion of thrombolytic agent",
+  "procedureCode": "9910"
+},
+{
+  "procedureDesc": "Diagnostic ultrasound of peripheral vascular system",
+  "procedureCode": "8877"
+},
+{
+  "procedureDesc": "Other auditory and vestibular function tests",
+  "procedureCode": "9546"
+},
+{
+  "procedureDesc": "Closed [transurethral] biopsy of bladder",
+  "procedureCode": "5733"
+},
+{
+  "procedureDesc": "Other repair of ovary",
+  "procedureCode": "6579"
+},
+{
+  "procedureDesc": "Other cesarean section of unspecified type",
+  "procedureCode": "7499"
+},
+{
+  "procedureDesc": "Repair of old traumatic injury of cranial and peripheral nerves",
+  "procedureCode": "0476"
+},
+{
+  "procedureDesc": "Transposition of nipple",
+  "procedureCode": "8586"
+},
+{
+  "procedureDesc": "Debridement of open fracture site, carpals and metacarpals",
+  "procedureCode": "7963"
+},
+{
+  "procedureDesc": "Other tenonectomy",
+  "procedureCode": "8342"
+},
+{
+  "procedureDesc": "Audiological evaluation",
+  "procedureCode": "9543"
+},
+{
+  "procedureDesc": "Microscopic examination of peritoneal and retroperitoneal specimen, toxicology",
+  "procedureCode": "9115"
+},
+{
+  "procedureDesc": "Removal of impacted feces",
+  "procedureCode": "9638"
+},
+{
+  "procedureDesc": "Closed reduction of temporomandibular dislocation",
+  "procedureCode": "7693"
+},
+{
+  "procedureDesc": "Operations on thalamus",
+  "procedureCode": "0141"
+},
+{
+  "procedureDesc": "Application of external fixator device, femur",
+  "procedureCode": "7815"
+},
+{
+  "procedureDesc": "Temporomandibular arthroplasty",
+  "procedureCode": "765"
+},
+{
+  "procedureDesc": "Injection of neurolytic agent into sympathetic nerve",
+  "procedureCode": "0532"
+},
+{
+  "procedureDesc": "Open total intra-abdominal colectomy",
+  "procedureCode": "4582"
+},
+{
+  "procedureDesc": "Other puncture of vein",
+  "procedureCode": "3899"
+},
+{
+  "procedureDesc": "Destruction of lesion of cervix by cauterization",
+  "procedureCode": "6732"
+},
+{
+  "procedureDesc": "Other procedures on hemorrhoids",
+  "procedureCode": "4949"
+},
+{
+  "procedureDesc": "Revision of lead [electrode]",
+  "procedureCode": "3775"
+},
+{
+  "procedureDesc": "Amputation above knee",
+  "procedureCode": "8417"
+},
+{
+  "procedureDesc": "Other transurethral prostatectomy",
+  "procedureCode": "6029"
+},
+{
+  "procedureDesc": "Removal of implanted devices from bone, femur",
+  "procedureCode": "7865"
+},
+{
+  "procedureDesc": "Implantation or insertion of radioactive elements",
+  "procedureCode": "9227"
+}
+]

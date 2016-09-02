@@ -2,48 +2,64 @@
 <body>
 <h1>Dependencies:</h1>
 <ul>
-<li>Install Nodejs runtime (https://github.com/nodejs/node)</li>
-<li>grunt-cli karma and bower, required by ngbp (Angular kickstarter included in current project http://ngbp.github.io/ngbp): sudo npm -g install grunt-cli karma bower
-</li>
-<li>grunt (http://gruntjs.com), required by grunt-cli: sudo npm install grunt -g (local install raises grunt issues).</li>
+	<li>Install Nodejs runtime (https://nodejs.org/en/ https://github.com/nodejs/node)</li>
+	<li>grunt-cli karma and bower, required by ngbp (Angular kickstarter included in current project http://ngbp.github.io/ngbp): sudo npm -g install grunt-cli karma bower
+	</li>
+	<li>grunt (http://gruntjs.com), required by grunt-cli: sudo npm install grunt -g (local install raises grunt issues).</li>
 </ul>
 <h1>Download the code:</h1>
 <ul>
-<li>git clone https://github.com/euasier/ngbp-first-app</li>
-<li>cd ngbp-first-app</li>
+	<li>git clone https://github.com/euasier/ngbp-first-app</li>
+	<li>cd ngbp-first-app</li>
 </ul>
 <h1>Install local dependencies:</h1>
 <ul>
-<li>npm install</li>
-<li>bower install</li>
+	<li>npm install</li>
+	<li>bower install</li>
 </ul>
 <h1>Step 0: Hello Angular</h1>
 <ul>
-<li>Download the code: git checkout -f step-0</li>
-<li>Build and run web app:</li>
-<ul>
-<li>grunt build</li>
-<li>npm start</li>
-<li>Visit the main page: http://localhost:8000</li>
-</ul>
+	<li>Download the code: git checkout -f step-0</li>
+	<li>Build and run web app:</li>
+	<ul>
+		<li>grunt build</li>
+		<li>npm start</li>
+		<li>Visit the main page: http://localhost:8000</li>
+	</ul>
 </ul>
 <h1>Step 1: List patients</h1>
 <ul>
-<li>Download the code: git checkout -f step-1</li>
-<li>Build and run the web app, visit the main page</li>
+	<li>Download the code: git checkout -f step-1</li>
+	<li>Build and run the web app, visit the main page</li>
 </ul>
 <h1>Step 2: Edit patient</h1>
 <ul>
-<li>Download the code: git checkout -f step-2</li>
-<li>Build and run the web app, visit the main page</li>
+	<li>Download the code: git checkout -f step-2</li>
+	<li>Build and run the web app, visit the main page</li>
 </ul>
 <h1>Step 3: Add new patient</h1>
 <ul>
-<li>Download the code: git checkout -f step-3</li>
-<li>Build and run the web app, visit the main page</li>
+	<li>Download the code: git checkout -f step-3</li>
+	<li>Build and run the web app, visit the main page</li>
 </ul>
 At the moment, this is a CRUD angular sample app and the data is managed locally.<br>
+<h1>Step 4: Manage data inside a server side database</h1>
+<ul>
+	<li>In order to interact with the server side database we will write our own http server in Express.
+	<ul>
+		<li>Install MongoDB NoSql database: https://www.mongodb.com/</li>
+		<li>Uninstall http-server: npm uninstall http-server -S</li>
+		<li>Install Express: npm install express -S</li>
+		<li>Install body-parser module for HTTP POST requests: npm install body-parser -S</li>
+		<li>Install Nodejs MongoDB NoSql database driver: npm install mongodb -S</li>
+	</ul>
+	</li>
+	<br>
+	<li>Download the code: git checkout -f step-4</li>
+	<li>Start MongoDB database: mongod</li>
+	<li>Create the database executing createDatabase.sh</li>
+	<li>Build and run the web app, visit the main page</li>
+</ul>
 Data generated with: https://www.mockaroo.com/
-
 </body>
 </html>

@@ -18,11 +18,12 @@ angular.module( 'ngbpFirstApp.listPatients', [
 })
 
 .controller( 'ListPatientsCtrl', function ListPatientsCtrl( $scope, patientsService ) {
-  // pending: execution of http request to obtain data
-  $scope.patients = patientsService.getAll();
+  // $scope.patients = patientsService.getAll();
+  patientsService.getAll().then(function(data) {$scope.patients =  data;},function (error) {alert("Error downloading diagnoses");});
 
   $scope.deletePatient = function (id) {
-    patientsService.removeById(id);
+    //patientsService.removeById(id);
+    patientsService.removeById(id).then(function(data) {$scope.patients =  data;},function (error) {alert("Error downloading diagnoses");});
   };
 
 });

@@ -1,7 +1,8 @@
 Dependencies:
 =============
 
--   Install Nodejs runtime (https://github.com/nodejs/node)
+-   Install Nodejs runtime
+    (https://nodejs.org/en/ https://github.com/nodejs/node)
 -   grunt-cli karma and bower, required by ngbp (Angular kickstarter
     included in current project http://ngbp.github.io/ngbp): sudo npm -g
     install grunt-cli karma bower
@@ -51,4 +52,22 @@ Step 3: Add new patient
 
 At the moment, this is a CRUD angular sample app and the data is managed
 locally.\
+
+Step 4: Manage data inside a server side database
+=================================================
+
+-   In order to interact with the server side database we will write our
+    own http server in Express.
+    -   Install MongoDB NoSql database: https://www.mongodb.com/
+    -   Uninstall http-server: npm uninstall http-server -S
+    -   Install Express: npm install express -S
+    -   Install body-parser module for HTTP POST requests: npm install
+        body-parser -S
+    -   Install Nodejs MongoDB NoSql database driver: npm install
+        mongodb -S
+-   Download the code: git checkout -f step-4
+-   Start MongoDB database: mongod
+-   Create the database executing createDatabase.sh
+-   Build and run the web app, visit the main page
+
 Data generated with: https://www.mockaroo.com/
