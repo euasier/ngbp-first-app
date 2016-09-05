@@ -1,7 +1,5 @@
 angular.module( 'ngbpFirstApp.listPatients', [
-  'ui.router',
-  'placeholders',
-  'ui.bootstrap'
+  'ui.router'
 ])
 
 .config(function config( $stateProvider ) {
